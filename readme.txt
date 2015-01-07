@@ -21,23 +21,25 @@ What It Does
 * Stores a unique Taxamo transaction for each subscription that includes all required VAT information.
 * Recurring future payments will be added to that same transaction.
 
-Important Notes.
+Important Notes
+
 * Paypal Standard does not allow a fluctuating tax. The subscription price is set to include the tax rate at time of subscription and the rate may change in the future. In this case any additional tax will come from the price of the subscription. EX. $10 Subscription at 20% tax is $12/cycle. If the rate goes to 22% then tax will be $2.20, thus $0.20 additional of the $10 would be considered tax.
 * Stripe allows monthly adjustment to the tax and this will be calculated every month.
 * Currently setup fees are not taxed. This will be resolved shortly.
 
-Setup Guide.
+Setup Guide
+
 1. If you haven't already sign up for [Taxamo](http://www.taxamo.com/).
-1. If your taxamo email doesn't match your sites domain then you need to do this.
+2. If your taxamo email doesn't match your sites domain then you need to do this.
  1. In your Taxamo Dashboard, Navigate to Integrate -> JavaScript API
- 1. Add your sites domain to the Currently configured additional domains under WEB API Referers.
-1. In your Taxamo Dashboard, Navigate to Integrate -> API Tokens
-1. Once signed in navigate to Integrate -> API Tokens
+ 2. Add your sites domain to the Currently configured additional domains under WEB API Referers.
+3. In your Taxamo Dashboard, Navigate to Integrate -> API Tokens
+4. Once signed in navigate to Integrate -> API Tokens
  1. If you are testing, you need the Test access tokens.
- 1. If not, provide your business details and activate your account, then copy the production access tokens.
-1. In your RCP Sites Admin Dashboard, Nagivate to Restrict -> Settings.
-1. Enter both your Public and Private token. Enter test tokens to test, production for live sites.
-1. Choose whether tax is included or added for new purchases.
+ 2. If not, provide your business details and activate your account, then copy the production access tokens.
+5. In your RCP Sites Admin Dashboard, Nagivate to Restrict -> Settings.
+6. Enter both your Public and Private token. Enter test tokens to test, production for live sites.
+7. Choose whether tax is included or added for new purchases.
 
 Currently VAT Tax will only apply to new subscribers. We are trying to determine the best way to implement this for existing subscriptions but this requires determining there billing location and verifying it. This may require users to at a minimum update their profiles with their billing country. 
 
