@@ -13,7 +13,7 @@ This adds Taxamo VAT Tax integration to your existing Restrict Content Pro site.
 
 This adds Taxamo VAT Tax integration to your existing Restrict Content Pro site.
 
-Includes full support for all future subscriptions using Paypal. Stripe Integration will be added shortly.
+Includes full support for all future subscriptions using Paypal. Stripe Integration is available but requires modifying RCP or waiting for the next update.
 
 What It Does
 
